@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Counter Application </title>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    
+
+    <title>Counter</title>
+</head>
+<body>
+    <h1> Counter Application </h1>
+    <div class="buttons">
+    <button onclick="counter()" id="counter-button"> Increment </button> 
+    
+    <button onclick="clearEverything()" id="clear-button">Clear</button>
+    </div>
+
+    <div id="counter-output"></div>
+    <script> 
+    var count=0;
+    function counter(){
+        count=count+1;
+        console.log(count);
+        document.getElementById("counter-output").innerText = count;
+        }
+    
+    function clearEverything(){
+        count=0;
+        console.log(count);
+        document.getElementById("counter-output").innerText= count;
+    }
+    </script>
+</body>
+</html>
